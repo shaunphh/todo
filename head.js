@@ -26,7 +26,7 @@ function editTitle(e) {
   input.rows = "1";
 
   setCaretToPos(document.querySelector("textarea"), -1);
-  console.log(this);
+
   input.onkeydown = function (event) {
     if (event.key == "Enter") {
       this.blur();
