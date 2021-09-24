@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" data-emoji="🍌" type="image/png" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script> -->
+
+    <title>Buy snacks</title>
+  </head>
+  <body>
+    <nav>
+      <div>🍌</div>
+      <span>Buy snacks</span>
+    </nav>
+    <header>
+      <div>
+        <button class="trigger">🍌</button>
+        <div>
+          <h1 title="Name your list">Buy snacks</h1>
+        </div>
+      </div>
+    </header>
+    <div class="todo-container">
+      <div class="select">
+        <label>
+          <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Complete</option>
+            <option value="uncompleted">Incomplete</option>
+          </select>
+        </label>
+        <div class="hr"></div>
+      </div>
+      <ul class="todo-list"></ul>
+      <form>
+        <button class="todo-button" type="submit">
+          <span class="material-icons-sharp">add</span>
+        </button>
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="New"
+          required
+          title="Add to your list"
+        />
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+    <script type="module" src="./head.js"></script>
+  </body>
+</html>
