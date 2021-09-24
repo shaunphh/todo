@@ -170,7 +170,7 @@ function editData(e) {
   const isEmpty = (str) => !str.trim().length;
   input.addEventListener("input", function () {
     if (isEmpty(this.value)) {
-      console.log(isEmpty);
+      // console.log(isEmpty);
       input.addEventListener("keydown", function (event) {
         const key = event.key;
         if (key === "Backspace" || key === "Delete") {
